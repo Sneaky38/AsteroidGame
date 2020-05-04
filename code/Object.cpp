@@ -248,8 +248,8 @@ SDL_Rect Spaceship::setHitbox()
 {
     float pi = 3.14159;
     float angle2 = this->angle * pi / 180;
-    this->hitbox.x = this->dstRect.x + abs((int)((this->dstRect.w - this->dstRect.h)/2*(pow(sin(angle2),3))));
-    this->hitbox.y = this->dstRect.y + 2.5 - abs((int)((this->dstRect.w - this->dstRect.h)/2*(pow(sin(angle2),2))));
+    this->hitbox.x = this->dstRect.x + abs((int)((this->dstRect.w - this->dstRect.h)*0.5*(pow(sin(angle2),3))));
+    this->hitbox.y = this->dstRect.y + 2.5 - abs((int)((this->dstRect.w - this->dstRect.h)*0.5*(pow(sin(angle2),2))));
     this->hitbox.w = this->dstRect.h - 2.5 + abs((int)((this->dstRect.w - this->dstRect.h)*(pow(cos(angle2),2))));
     this->hitbox.h = this->dstRect.w - 2.5 - abs((int)((this->dstRect.w - this->dstRect.h)*(pow(cos(angle2),2))));
     return this->hitbox;

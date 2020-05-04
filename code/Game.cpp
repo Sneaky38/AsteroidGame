@@ -450,6 +450,7 @@ int main(int argc, char *argv[]){
             // Cas où une météorite touche le vaisseau
             if (SDL_HasIntersection(&r1, &r3)) {
                 list_Asteroids[a].~Asteroid();
+                list_Asteroids.erase(list_Asteroids.begin() + a);
                 if (!spaceship.getInvincible()){
                     // Si le joueur n'est pas en état d'invincibilité alors il perd une vie
                     spaceship.setHP(spaceship.getHP() - 1);
