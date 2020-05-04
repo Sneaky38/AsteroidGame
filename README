@@ -1,0 +1,22 @@
+Prérequis:
+Pour compiler correctement le programme veuillez installer SDL2_TTF sur votre machine.
+Si besoin il suffit de se placer dans le dossier SDL2_TTF et écrire les commandes suivantes dans un terminal:
+./configure
+make
+make install
+
+Lancer le jeu:
+Pour lancer le jeu il suffit de se placer dans le dossier bin puis lancer les commandes suivantes:
+cmake ../
+make 
+./game
+Le jeu devrait se lancer !
+
+Gameplay: 
+Pour jouer c'est simple les touches <- et -> permette de tourner le vaisseau à gauche ou à droite.
+Pour avancer il faut auppuer sur la touche fleche vers le haut.
+Lorsque vous êtes touchés par une météorite vous êtes alors invinsible pendant 3 secondes.
+Vous disposez de 3 vie, une fois mort c'est game over.
+Le but: détruire un maximum de météorite !
+Le score sera le nombre de météorite détruites, chaque météorite détruire aura une chance de vous donner un bonus qui peut être
+une vie supplémentaire ou encore un mode de tire différent qui durera 5secondes.
