@@ -15,7 +15,7 @@ Le jeu devrait se lancer !
 Gameplay: 
 Pour jouer c'est simple les touches <- et -> permette de tourner le vaisseau à gauche ou à droite.
 Pour avancer il faut auppuer sur la touche fleche vers le haut.
-Lorsque vous êtes touchés par une météorite vous êtes alors invinsible pendant 3 secondes.
+Lorsque vous êtes touchés par une météorite vous êtes alors invincible pendant 3 secondes.
 Vous disposez de 3 vie, une fois mort c'est game over.
 Le but: détruire un maximum de météorite !
 Le score sera le nombre de météorite détruites, chaque météorite détruire aura une chance de vous donner un bonus qui peut être
